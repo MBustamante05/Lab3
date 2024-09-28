@@ -14,8 +14,8 @@ eventForm.addEventListener("submit", function(e){
   e.preventDefault(); //Evitar que la página se recargue
 
   //Obtenerr valores del formulario
-  const eventTitle = eventTitleInput.value;
-  const eventDate = eventDateInput.value;
+  const eventTitle = eventTitleInput.value.trim();
+  const eventDate = eventDateInput.value.trim();
 
   //Validar que los campos no estén vacíos
   if(eventTitle == "" || eventDate=== ""){
